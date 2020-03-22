@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number"
+        android:id="@+id/et1"
+        android:inputType="phone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Message"
+        android:textColor="@color/color3"
+        android:id="@+id/et2"
+        android:textStyle="italic"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="Call"
+            android:text="Call"
+            android:layout_weight="0.5"
+            android:textStyle="italic"
+            android:theme="@style/Animation.AppCompat.Dialog"
+            android:background="@color/color"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="Message"
+            android:text="Message"
+            android:layout_weight="0.5"
+            android:textStyle="italic"
+            android:textColorHint="@color/color"
+            android:background="@color/color1"/>
+    </LinearLayout>
+
+</LinearLayout>
